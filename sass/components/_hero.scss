@@ -20,6 +20,23 @@
             color: var(--white-color);
         }}
 
+                @media screen and (max-width: 767px) {
+                .hero {
+                    min-width: 480px;
+                    padding: 118px 0;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    height: 400px;
+                    min-width: 480px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/team.jpg);;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }}
+
 .hero-title {
     color: var(--white-color);
     width: 696px;
@@ -37,12 +54,47 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+@media screen and (max-width: 767px) {
+    .hero-title {
+    width: 360px;
+    height: 84px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 42px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: auto;
+        margin-right: auto;
+}}
+
 .hero-button.primary {
     color: var(--white-color);
     background-color: var(--accent-color);
     font-family: inherit;
 }
 
+@media screen and (max-width: 767px) {
+   .hero-button.primary {
+    padding: 10px 32px;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: .06em;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    color: var(--white-color);
+    cursor: pointer;}}
+
+    
 
 .hero-button.primary {
     width: 200px;

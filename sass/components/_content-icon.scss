@@ -1,70 +1,151 @@
-.image-box {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    font-style: normal;
-    margin: 0px;
-    padding: 0px;
+// .image-box {
+//     display: flex;
+//     flex-wrap: wrap;
+//     list-style: none;
+//     font-style: normal;
+//     margin: 0px;
+//     padding: 0px;
+// }
+
+// .box-icon {
+//     display: flex;
+//     list-style: none;
+//     font-style: normal;
+//     justify-content: space-between;
+//     margin: 0px;
+//     padding: 0px;
+// }
+
+@media screen and (max-width: 767px) {
+.box-icon__information:not(:last-child) {
+    margin-bottom: 0px;
+}}
+@media screen and (max-width: 767px) {
+    .box-icon__information {
+        margin-bottom: 30px;
+    }
 }
 
-.box-icon {
-    display: flex;
-    list-style: none;
-    font-style: normal;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
+
+// .section {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+
+
+// &:nth-child(0n + 2) {
+//     padding-bottom: 0px;
+// }}
+
+
+@media screen and (max-width: 767px) {
+    .section {
+    min-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}}
+
+@media screen and (max-width: 767px) {
+   .container {
+    width: 480px;
+}}
+
+
+@media screen and (max-width: 767px){
+    .box-icon{
+        flex-wrap: wrap;
+    }
 }
 
-.box-icon__picture {
+@media screen and (max-width: 767px) {
+   .box-icon__img {
     display: flex;
     justify-content: center;
-    padding: 25px 100px;
-    border-radius: 4px;
-    margin-bottom: 30px;
-    width: 270px;
+    align-items: center;
+    width: 450px;
     height: 120px;
+    padding: 25px 190px;
+    border-radius: 4px;
     background-color: var(--background-color-team);
-}
+    margin-bottom: 30px;
+}}
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+//  .box-icon__picture {
+//      display: flex;
+//      justify-content: center;
+//      padding: 25px 100px;
+//      border-radius: 4px;
+//      margin-bottom: 30px;
+//      width: 450px;
+//      height: 120px;
+//      background-color: var(--background-color-team);
+//  }
 
+ @media screen and (max-width: 767px) {
+   .box-icon__picturee {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 450px;
+     height: 120px;
+     padding: 25px 190px;
+     border-radius: 4px;
+     background-color: var(--background-color-team);
+     margin-bottom: 30px;
+ }}
 
-&:nth-child(0n + 2) {
-    padding-bottom: 0px;
+@media screen and (max-width: 767px) {
+.box-icon__picture:not(:last-child) {
+    margin-bottom: 30px;
 }}
 
 .hidden {
     display: none;
-}
+ }
 
-.box-icon__header {
-    color: var(--title-text-color);
+// .box-icon__header {
+//     color: var(--title-text-color);
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     margin-bottom: 10px;
+//     text-transform: uppercase;
+//     margin-top: 0px;
+// }
+
+@media screen and (max-width: 767px) {
+    .box-icon__header {
+    text-align: center;
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
-    margin-bottom: 10px;
+    line-height: 1.2;
     text-transform: uppercase;
-    margin-top: 0px;
-}
+}}
 
-.box-icon__information {
-    display: inline-block;
-    margin-right: 30px;
-    width: 270px;
-    list-style: none;
-    line-height: 1.71;
-}
+// .box-icon__information {
+//     display: inline-block;
+//     margin-right: 30px;
+//     width: 270px;
+//     list-style: none;
+//     line-height: 1.71;
+// }
 
-.box-icon__information:last-child {
-    margin-right: 0px;
-}
+// .box-icon__information:last-child {
+//     margin-right: 0px;
+// }
 
-.box-icon__subtitle {
+// .box-icon__subtitle {
+//     font-size: 14px;
+//     line-height: 1.71;
+//     margin: 0;
+//     letter-spacing: 0.03em;
+// }
+
+@media screen and (max-width: 767px){
+    .box-icon__subtitle {
     font-size: 14px;
     line-height: 1.71;
-    margin: 0;
-    letter-spacing: 0.03em;
-}
+    color: var(--title-text-color);
+}}

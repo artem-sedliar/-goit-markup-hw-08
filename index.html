@@ -23,6 +23,49 @@
             <nav class="site-header__nav">
                 <a href="./index.html" class="site-header__logo"><span class="site-header__logo--web">Web</span><span
                         class="site-header__logo--studio">Studio</span></a>
+                <button type="button" class="header__menu is-open" data-menu-button aria-expanded="false"
+                    aria-controls="menu-modal" data-menu-button="">
+                    <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+                        <use class="header__menu--close" href="./images/sym.svg#close_24px"></use>
+                        <use class="header__menu--open" href="./images/sym.svg#menu_24px"></use>
+                    </svg>
+                </button>
+                <div class="menu-modal is-open" data-menu id="menu-modal">
+                    <ul>
+                        <li class="menu-modal__item">
+                            <a href="./index.html" class="menu-modal__link  menu-modal_link--current">Студия</a>
+                        </li>
+                        <li class="menu-modal__item">
+                            <a href="./portfolio.html" class="menu-modal__link">Портфолио</a>
+                        </li>
+                        <li class="menu-modal__item">
+                            <a href="" class="menu-modal__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="menu-modal__contacts--item"> <a href="tel:+380961111111"
+                                class="contacts__link contacts__link--color"> +38 096
+                                111 11 11</a>
+                        </li>
+                        <li class="menu-modal__contacts--item">
+                            <a href="mailto:info@devstudio.com" class="contacts__link"> info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="menu-modal__social">
+                        <li class="menu-modal__social--network">
+                            <a href="" class="menu-modal__social--border">Instagram </a>
+                        </li>
+                        <li class="menu-modal__social--network">
+                            <a href="" class="menu-modal__social--border">Twitter </a>
+                        </li>
+                        <li class="menu-modal__social--network">
+                            <a href="" class="menu-modal__social--border">Facebook</a>
+                        </li>
+                        <li class="menu-modal__social--network">
+                            <a href="" class="menu-modal__social--border">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
                 <ul class="site-navigation">
                     <li class="site-navigation__reference"><a href="./index.html"
                             class="site-navigation__reference--current">Студия</a></li>
@@ -116,7 +159,7 @@
                 <div class="box-icon">
                     <ul class="box-icon__section">
                         <li class="box-icon__picture">
-                            <svg height="70" width="70">
+                            <svg class="box-icon__img" height="70" width="70">
                                 <use href="./images/symbol.svg#antenna"></use>
                             </svg>
                         </li>
@@ -131,7 +174,7 @@
                     </ul>
                     <ul class="box-icon__section">
                         <li class="box-icon__picture">
-                            <svg height="70" width="70">
+                            <svg class="box-icon__img" height="70" width="70">
                                 <use href="./images/symbol.svg#clock"></use>
                             </svg>
                         </li>
@@ -145,7 +188,7 @@
                     </ul>
                     <ul class="box-icon__section">
                         <li class="box-icon__picture">
-                            <svg height="70" width="70">
+                            <svg class="box-icon__img" height="70" width="70">
                                 <use href="./images/symbol.svg#diagram"></use>
                             </svg>
                         </li>
@@ -159,7 +202,7 @@
                     </ul>
                     <ul class="box-icon__section">
                         <li class="box-icon__picture">
-                            <svg height="70" width="70">
+                            <svg class="box-icon__img" height="70" width="70">
                                 <use href="./images/symbol.svg#astronaut"></use>
                             </svg>
                         </li>
@@ -180,7 +223,7 @@
 
         </section>
         <!--section imeges-->
-        <section class="section">
+        <section class="section image">
             <div class="container">
                 <h2 class="subtitle">Чем мы занимаемся</h2>
                 <ul class="image-box">
@@ -413,7 +456,7 @@
                 <form class="footer-subscribe__form">
                     <div class="footer-subscribe__box">
                         <label for="mail"></label>
-                        <input type="text" name="mail" id="mail" placeholder="E-mail">
+                        <input class="footer-subscribe__input" type="text" name="mail" id="mail" placeholder="E-mail">
                         <button type="submit" class="footer-subscribe__btn">Подписаться
                             <svg class="footer-subscribe__icon" width="24" height="24">
                                 <use href="./images/defs.svg#icon-send"></use>
@@ -424,6 +467,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

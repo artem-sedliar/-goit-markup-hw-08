@@ -1,7 +1,22 @@
+@media screen and (max-width: 767px) {
+    .image-box__picture,
+    .image-box__section,
+    .image-box__subtitle,
+    .portfolio__title,
+    .image-box,
+    .subtitle{
+        display: none;
+    }
+}
 .image-box__picture {
     margin-right: 30px;
     position: relative;
 }
+
+@media screen and (max-width: 767px) {
+.image{
+    padding: 0px;
+}}
 
 .image-box__section {
     position: absolute;
