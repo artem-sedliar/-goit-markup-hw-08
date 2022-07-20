@@ -1,3 +1,4 @@
+
 .portfolio__title {
     padding-left: 24px;
     padding-top: 20px;
@@ -8,6 +9,19 @@
     background-color: var(--white-color);
     z-index: 2;
 }
+
+@media screen and (max-width: 767px) {
+    .portfolio__title {
+            padding-left: 24px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border: 1px solid #212121;
+            border-top: none;
+            position: relative;
+            background-color: var(--white-color);
+            z-index: 2;
+        }}
+
 .portfolio__header {
     color: var(--title-text-color);
     font-weight: 700;
@@ -16,22 +30,72 @@
     margin: 0;
     padding-bottom: 3px;
 }
+@media screen and (max-width: 767px) {
+    .portfolio__header {
+            color: var(--title-text-color);
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 2;
+            margin: 0;
+            padding-bottom: 3px;
+        }}
 
+@media screen and (min-width: 1200px) {
 .portfolio__conteiner {
     position: absolute;
         bottom: 109px;
-        width: 100%;
+        width: 370px;
         height: 294px;
         padding: 63px 24px;
         background: rgba(33, 150, 243, .9);
         transform: translateY(100%);
         transition: 250ms var(--animation-time);
+    }}
+
+        @media screen and (min-width: 768px) {
+            .portfolio__conteiner {
+                    position: absolute;
+                    bottom: 109px;
+                    width: 370px;
+                    height: 294px;
+                    padding: 63px 24px;
+                    background: rgba(33, 150, 243, .9);
+                    transform: translateY(100%);
+                    transition: 250ms var(--animation-time);
+                }
+            }
+
+        @media screen and (max-width: 767px) {
+.portfolio__conteiner {
+        position: absolute;
+        bottom: 109px;
+        width: 100%;
+        overflow: hidden;
+        height: 294px;
+        padding: 63px 24px;
+        background: rgba(33, 150, 243, .9);
+        transform: translateY(100%);
+        transition: 250ms var(--animation-time);
+    }}
+
+
+
+@media screen and (max-width: 767px) {
+    .portfolio__images {
+        width: 450px;
+        height: 294px;
+        margin-right:auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+        border: 1px solid var(--color-border);
     }
+}
 
-
+@media screen and (min-width: 1200px) {
 .portfolio__images {
     display: block;
-}
+    width: 370px;
+}}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 .portfolio__images {
@@ -47,24 +111,59 @@
     color: var(--white-color);
 }
 
-.portfolio__element {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: 250ms var(--timing-function);
-}
+
+@media screen and (min-width: 768px) {
+    .portfolio__element {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            width: 354px;
+            transition: 250ms var(--timing-function);
+            margin-bottom: 30px;
+        }
+    }
+@media screen and (max-width: 767px) {
+    .portfolio__element {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            width: 450px;
+            height: 404px;
+            transition: 250ms var(--timing-function);
+            margin-bottom: 30px;
+        }
+    }
+
+        @media screen and (min-width: 1200px) {
+            .portfolio__element {
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                width: 370px;
+                transition: 250ms var(--timing-function);
+            }
+        }
 
 .portfolio__element:hover .portfolio__conteiner {
     transform: translatey(0);
 }
 
-
+@media screen and (max-width: 767px) {
 .portfolio__card {
-    width: 370px;
+    width: 450px;
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid var(--color-border);
-}
+}}
+
+@media screen and (min-width: 1200px) {
+    .portfolio__card {
+        width: 370px;
+            height: 404px;
+       margin-bottom: 30px;
+        border: 1px solid var(--color-border);
+    }}
+
 
 .portfolio__card:nth-child(3n) {
     margin-right: 0px;

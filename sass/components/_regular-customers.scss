@@ -35,7 +35,7 @@
     list-style: none;
      justify-content: center;
      display: flex;
-     margin-right: 30px;
+    
  }}
 
 @media screen and (min-width: 1200px) {
@@ -140,6 +140,13 @@
    align-items: center;
    color: var(--border-color-client);
 transition: 250ms var(--animation-time);}
+
+@media screen and (min-width: 1200px){
+
+    .client__logo:last-child {
+        margin-right: 0px;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .client__link {
