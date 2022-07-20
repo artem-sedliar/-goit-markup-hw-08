@@ -1276,6 +1276,7 @@ ul {
     font-size: 14px;
     line-height: 1.2;
     text-transform: uppercase;
+    color: #212121;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1286,7 +1287,6 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-text-color);
   }
 }
 @media screen and (min-width: 1200px) {
