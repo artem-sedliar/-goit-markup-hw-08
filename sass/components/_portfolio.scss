@@ -33,6 +33,12 @@
     display: block;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.portfolio__images {
+    width: 354px;
+    display: block;
+}}
+
 .portfolio__text {
     font-weight: 400;
     font-size: 18px;
@@ -89,3 +95,10 @@
     margin: 0px;
     padding: 0px;
 }
+
+@media screen and (min-width: 768px) {
+.portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}}

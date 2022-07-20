@@ -1,26 +1,4 @@
-@media screen and (min-width: 1200px) {
- .team {
-     background-color: var(--background-color-team);
-     height: 708px;
-     margin-left: auto;
-    margin-right: auto;
-     padding-top: 94px;
-    padding-bottom: 94px;
 
- &__section:hover {
-         cursor: pointer;
-        box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
-             1px 4px 6px rgb(0 0 0 / 16%);
-     }
-         &__link:hover,
-         &__link:focus {
-             fill: var(--white-color);
-             background-color: var(--accent-color);
-            border-radius: 50%;
-         }
-         &__section:last-child {
-             margin-right: 0px;
-         }}}
 
 @media screen and (max-width: 767px) {
     .team {
@@ -313,3 +291,30 @@ justify-content: center;
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .team {
+        background-color: var(--background-color-team);
+        height: 708px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+        &__section:hover {
+            cursor: pointer;
+            box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+                1px 4px 6px rgb(0 0 0 / 16%);
+        }
+
+        &__link:hover,
+        &__link:focus {
+            fill: var(--white-color);
+            background-color: var(--accent-color);
+            border-radius: 50%;
+        }
+
+        &__section:last-child {
+            margin-right: 0px;
+        }
+    }
+}

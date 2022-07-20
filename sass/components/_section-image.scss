@@ -32,7 +32,7 @@
 }}
 
  @media screen and (min-width: 1200px) {
-.image{
+.image {
     padding-top: 94px;
     padding-bottom: 94px;
     display: contents;
@@ -85,11 +85,17 @@
     text-align: center;
     margin-bottom: 50px;
     margin-top: 0px;
+
 }
-.image {
-    margin-bottom: 94px;
+.image >div {
+    padding-top: 94px;
+        padding-bottom: 94px;
 }
 .conteiner {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section .image {
     padding-top: 94px;
     padding-bottom: 94px;
 }
