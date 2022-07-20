@@ -118,10 +118,10 @@
     text-decoration: none;
     display: inline-block;
 }}
- 
-.team__section img {
+ @media screen and (max-width: 767px) {
+ .team__section img {
     width: 100%;
-}
+ }}
 
 @media screen and (min-width: 768px) {
   .team__network:not(:last-child) {
