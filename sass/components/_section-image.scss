@@ -17,12 +17,7 @@
 
 @media screen and (min-width: 768px) {
 
-    .image-box__picture,
-    .image-box__section,
-    .image-box__subtitle,
-    .portfolio__title,
-    .image-box,
-    .subtitle {
+    .image {
         display: none;
     }
 }
@@ -42,6 +37,7 @@
 @media screen and (max-width: 767px) {
 .image{
     padding: 0px;
+    display: none;
 }}
 
  @media screen and (min-width: 1200px) {

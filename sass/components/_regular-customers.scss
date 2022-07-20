@@ -140,14 +140,14 @@ transition: 250ms var(--animation-time);}
     fill: var(--border-color-client);
     transition: 250ms var(--animation-time);
     margin: 15px;
-  }
+  }}
 
 
- &:hover,
- &:focus {
-    border: 1px solid var(--accent-color);
-     color: var(--accent-color);
- }}
+//  &:hover,
+//  &:focus {
+//     border: 1px solid var(--accent-color);
+//      color: var(--accent-color);
+//  }}
 
 
 @media screen and (max-width: 767px) {
