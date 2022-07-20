@@ -30,18 +30,26 @@
     
 }}
 
+@media screen and (min-width: 1200px) {
+ .client__logo {
+    list-style: none;
+     justify-content: center;
+     display: flex;
+ }
 
-// .client__logo {
-//     list-style: none;
-//     justify-content: center;
-//     display: flex;
-// }
+ .section-clients {
+     padding-top: 94px;
+     padding-bottom: 94px;
+ }}
 
-// .section-clients {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-// }
 
+@media screen and (min-width: 768px) {
+   .section-clients {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}}
 
 @media screen and (max-width: 767px) {
     .section-clients {
@@ -53,16 +61,27 @@
     padding-top: 60px;
     padding-bottom: 60px;
 }}
+@media screen and (min-width: 1200px) {
+ .client__header {
+    font-size: 36px;
+    line-height: 1.16;
+     text-align: center;
+     letter-spacing: 0.03em;
+    color: var(--title-text-color);
+     margin-top: 0px;
+     margin-bottom: 50px;
+ }}
 
-// .client__header {
-//     font-size: 36px;
-//     line-height: 1.16;
-//     text-align: center;
-//     letter-spacing: 0.03em;
-//     color: var(--title-text-color);
-//     margin-top: 0px;
-//     margin-bottom: 50px;
-// }
+@media screen and (min-width: 768px) {
+    .client__header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.16;
+    letter-spacing: .03em;
+    color: var(--title-text-color);
+    margin-bottom: 30px;
+}}
 
 @media screen and (max-width: 767px) {
    .client__header {
@@ -75,12 +94,21 @@
     margin-bottom: 30px;
 }}
 
-// .client__section {
-//     display: flex;
-//     justify-content: center;
-//     text-align: center;
-// }
+@media screen and (min-width: 1200px) {
+ .client__section {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+ }}
 
+
+@media screen and (min-width: 768px) {
+   .client__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -15px;
+}}
 
 @media screen and (max-width: 767px) {
    .client__section {
@@ -102,12 +130,24 @@
    color: var(--border-color-client);
 transition: 250ms var(--animation-time);}
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .client__link {
+    width: 226px;
+    height: 92px;
+    border: 1px solid var(--border-color-client);
+    border-radius: 4px;
+    display: flex;
+    fill: var(--border-color-client);
+    transition: 250ms var(--animation-time);
+    margin: 15px;
+  }
 
-// &:hover,
-// &:focus {
-//     border: 1px solid var(--accent-color);
-//     color: var(--accent-color);
-// }}
+
+ &:hover,
+ &:focus {
+    border: 1px solid var(--accent-color);
+     color: var(--accent-color);
+ }}
 
 
 @media screen and (max-width: 767px) {

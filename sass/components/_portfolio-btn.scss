@@ -15,16 +15,16 @@
     transition: 250ms var(--animation-time);
 }
 
-// .button {
-//     margin-right: 8px;
-//     transition: 250ms var(--animation-time);
+ .button {
+     margin-right: 8px;
+     transition: 250ms var(--animation-time);
 
 
-// & :hover,
-// & :focus {
-//     color: var(--white-color);
-//     background-color: var(--accent-color);
-// }}
+ & :hover,
+ & :focus {
+     color: var(--white-color);
+     background-color: var(--accent-color);
+ }}
 
 @media screen and (max-width: 767px){
  .button:not(:last-child) {
@@ -46,6 +46,14 @@
 //     margin-bottom: 50px;
 //     margin-top: 0px;
 // }
+
+@media screen and (min-width: 768px) {
+    .list-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}}
+
 
 @media screen and (max-width: 767px) {
     .list-btn {
